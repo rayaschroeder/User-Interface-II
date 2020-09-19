@@ -200,7 +200,7 @@ h4 {
   padding-top: 50px;
 }
 
-@media (max-width: 1150px){
+@media (max-width: 800px){
   .section-1-L {
     margin-right: 4%;
     width: 100%;
@@ -240,7 +240,7 @@ h4 {
   }
 }
 
-@media (max-width: 630px){
+@media (max-width: 500px){
   h1 {
     text-align: center;
   }
