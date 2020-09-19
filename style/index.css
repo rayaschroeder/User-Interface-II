@@ -67,6 +67,15 @@ nav {
   margin: 3% 0% 0% 3%;
 }
 
+nav button {
+  text-decoration: none;
+  text-align: center;
+  width: 10em;
+  background-color: #b88b98;
+  color: black;
+}
+
+
 button {
   font-family: 'Kumbh Sans';
   padding: 1em 3em;
@@ -79,19 +88,22 @@ button:hover {
   color: white;
 }
 
-div {
+.top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .section-1-L {
-  margin: 3% 2% 0 4%;
+  background-image: url("https://picsum.photos/2000/1200");
+  margin: 5% 2% 0 4%;
+  width: 44%;
+  height: 400px;
 }
 
 .section-1-R {
-  margin: 3% 4% 0 4%;
-  width: 40%;
+  margin: 3% 4% 3% 2%;
+  width: 44%;
 }
 
 h2 {
@@ -104,7 +116,6 @@ h2 {
 
 #button-my-projects {
   padding: 1.5em 4em;
-  margin-right: 65%;
   font-family: 'Kumbh Sans';
   background-color: #b88b98;
   border: none;
@@ -119,26 +130,27 @@ h2 {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.9rem;
   margin-right: 1%;
   line-height: 1.5;
 }
 
-.section-2 {
-  margin: 3% 4% 2% 4%;
+.middle {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 3% 4% 3% 4%;
 }
 
-.img-and-text {
-  display: block;
-  text-align: center;
+.img-text {
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
-  margin-top: 5%;
+  margin-top: 2%;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .section-3 {
@@ -166,4 +178,36 @@ h4 {
 #fb-icon {
   width: 10%;
   padding-top: 50px;
+}
+
+@media (max-width: 1050px){
+  .section-1-L {
+    margin-right: 4%;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.9rem;
+    line-height: 1.5;
+  }
+
+  .section-1-R {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px){
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
